@@ -41,38 +41,5 @@ while True:
     # contador += 1 es equivalente a: contador = contador + 1
     contador += 1
 
-# ============================================
-# EJEMPLOS ADICIONALES (COMENTADOS)
-# ============================================
-# Otros patrones comunes con while True y break:
-
-# Ejemplo 1: Bucle con entrada del usuario
-# while True:
-#     entrada = input("Ingrese 'salir' para terminar: ")
-#     if entrada.lower() == 'salir':
-#         break
-#     print(f"Usted ingresó: {entrada}")
-
-# Ejemplo 2: Bucle con múltiples condiciones
-# contador = 0
-# while True:
-#     contador += 1
-#     if contador > 5:
-#         print("Se alcanzó el límite de 5")
-#         break
-#     elif contador == 3:
-#         print("Saltando la iteración 3")
-#         continue  # Salta a la siguiente iteración
-#     print(f"Iteración {contador}")
-
-# Ejemplo 3: Bucle con try-except
-# while True:
-#     try:
-#         numero = int(input("Ingrese un número: "))
-#         print(f"El número es: {numero}")
-#         break
-#     except ValueError:
-#         print("Error: Debe ingresar un número válido")
-
 
 
