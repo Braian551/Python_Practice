@@ -10,7 +10,7 @@ match valor:
         bas = float(input("Ingresa la base: "))#Los números tambien pueden ser decimales entonces los inputs tipo float
         alt = float(input("Ingresa la altura: "))
         # cálculo
-        area = float((bas*alt)/2)
+        area = float((bas*alt)/2)#calculo
         print(f"El area del triangulo es {area}")
         
     case 2:
@@ -18,7 +18,7 @@ match valor:
         bas = float(input("Ingresa la base: "))
         alt = float(input("Ingresa la altura: "))
         # cálculo
-        area = float((bas*alt))
+        area = float((bas*alt))#calculo
         print(f"El area del Rectángulo es {area}")
     case 3:
         print("Bienvenido al Sistema de cálculo del área del Círculo")#Mensaje de bienvenida
