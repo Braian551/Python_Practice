@@ -5,8 +5,18 @@ print("Bienvenido al sistema de cálculo para promedios")
 
 cantidad = int(input("Cuántos números vas a ingresar: "))
 contador = 1
+
 while contador <= cantidad :
     
     nums= float(input("Ingresa un número: "))
     
+    resultado = nums
+    resultado += nums
+    
+    
+
+
+    
     contador += 1
+   
+print(resultado)
