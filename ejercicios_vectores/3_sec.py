@@ -10,8 +10,8 @@ vector = []  # Inicializo un vector vacío
 for i in range(tamaño):  # Recorro segun el tamaño del vector, y comenzar por defecto en 0
     if i == 0:  # Si es el primer elemento, lo agrego como 1
         vector.append(1)
-    elif i == 1:  # Si es el segundo elemento, lo agrego como 2
+    elif i == 1:  
         vector.append(2)
-    else:  # Para los demás elementos, incremento de 3 en 3
+    else:  
         vector.append(i * 3) #ya despues de agregar los dos primeros numeros, ahora si continuamos con los multiplos de 3 
 print("\033[34m Vector:", vector)  # Luego imprimo el vector

@@ -65,3 +65,5 @@ print(f"la posicion del elemento 4 en la tupla es: {tupla.index(4)}")  # mostram
 print(f"la cantidad de veces que se repite el elemento 4 en la tupla es: {tupla.count(4)}")  # mostramos la cantidad de veces que se repite el elemento 4 en la tupla
 lista5= list(tupla)  # convertimos la tupla en una lista
 print(f"convertir la tupla en una lista: {lista5}")  # mostramos la lista convertida de la tupla
+lista5.append(69)  # agregamos un elemento a la lista
+print(f"agregar un elemento a la lista convertida de la tupla: {lista5}")  # mostramos la lista convertida de la tupla con el elemento agregado

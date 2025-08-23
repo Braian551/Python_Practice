@@ -11,6 +11,6 @@ vector = []  # Inicializo un vector vacío
 for i in range(tamaño):  # Recorro segun el tamaño del vector, y comenzar por defecto en 0
     vector.append(i*2+1) #la funcion append agrega el elemento al final del vector
     #lo que va hacer es en cada iteracion va multiplicar por 2 y sumar 1 para que sea impar
-    #por ejemplo: 0*2+1=1, 1*2+1=3, 2*2+1=5, etc.
-print("\033[34m Vector:", vector)  # Luego imprimo el vector
+
+print("\033[34m Vector:", vector)  
     

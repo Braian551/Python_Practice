@@ -9,20 +9,20 @@ abecedario = list(st.ascii_lowercase)  # Vector con el abecedario en minúsculas
 
 print("abecedario con sus posiciones:") #imprimo el abecedario
 for i,lt in enumerate(abecedario): #enumerate me ayuda a obtener el indice y el valor del array
-    # ejemplo i = 0, lt = 'a', separo la tupla en dos variables
+    # ejemplo i = 0, lt = 'a', separo  en dos variables
     print(f"{i}: {lt}") #imprimo el indice y la letra correspondiente del abecedario
 
 
-veces = int(input("¿Cuántas letras quieres ingresar? (3, 5 o 6): "))  # Solicito al usuario cuántas letras quiere ingresar
+veces = int(input("cuantas letras va a ingresar? "))  # Solicito al usuario cuántas letras quiere ingresar
 
 letras = []  # Inicializo una lista vacía para almacenar las letras ingresadas
 for i in range(veces):  # Recorro según la cantidad de letras que el usuario quiere ingresar
     while True:  # Bucle para asegurar que se ingrese una posición válida
-        posicion = int(input(f"Ingrese la posición de la letra {i + 1}: "))  # Solicito la posición de la letra
+        posicion = int(input(f"ingrese la posición de la letra {i + 1}: "))  # Solicito la posición de la letra
         if 0 <= posicion < len(abecedario):  # Verifico que la posición esté dentro del rango del abecedario
             letras.append(abecedario[posicion])  # Agrego la letra correspondiente a la lista
-            break  # Salgo del bucle si la posición es válida
+            break  
         else:
          print("Posición inválida. Debe estar entre 0 y 25.")  # Mensaje de error si la posición es inválida
 
-print("\033[34m Palabra formada:", ''.join(letras))  # Imprimo la palabra formada por las letras ingresadas
+print("\033[34m palabra formada:", ''.join(letras))  # Imprimo la palabra formada por las letras ingresadas

@@ -10,4 +10,4 @@ vector =[] # Inicializo un vector vacío
 
 for i in range(1, tamaño): #Hago que comience en 1 para que el primer elemento sea 2, hasta 15 que es la dimension del vector 
     vector.append(i * 2)  # Comienza en 2 y aumenta de 2 en 2
-print("\033[34m Vector:", vector)  #luego imprimo el vector
+print("\033[34m Vector:", vector) 
