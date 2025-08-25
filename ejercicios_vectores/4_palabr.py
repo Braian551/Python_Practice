@@ -9,17 +9,17 @@ abecedario = list(st.ascii_lowercase)  # Vector con el abecedario en minúsculas
 
 print("abecedario con sus posiciones:") #imprimo el abecedario
 for i,lt in enumerate(abecedario): #enumerate me ayuda a obtener el indice y el valor del array
-    # ejemplo i = 0, lt = 'a', separo  en dos variables
+    
     print(f"{i}: {lt}") #imprimo el indice y la letra correspondiente del abecedario
 
 
 veces = int(input("cuantas letras va a ingresar? "))  # Solicito al usuario cuántas letras quiere ingresar
 
-letras = []  # Inicializo una lista vacía para almacenar las letras ingresadas
-for i in range(veces):  # Recorro según la cantidad de letras que el usuario quiere ingresar
-    while True:  # Bucle para asegurar que se ingrese una posición válida
+letras = []  
+for i in range(veces):  
+    while True:  
         posicion = int(input(f"ingrese la posición de la letra {i + 1}: "))  # Solicito la posición de la letra
-        if 0 <= posicion < len(abecedario):  # Verifico que la posición esté dentro del rango del abecedario
+        if 0 <= posicion < len(abecedario):  
             letras.append(abecedario[posicion])  # Agrego la letra correspondiente a la lista
             break  
         else:
