@@ -1,0 +1,7 @@
+ID | Nombre Completo       | Nota
+---------------------------------
+1  | Ana María López       | 4.5
+2  | Juan Carlos Torres    | 3.8
+3  | Luisa Fernanda Gómez  | 4.9
+4  | Pedro Andrés Ramírez  | 2.7
+5  | Sofía Martínez Ríos   | 3.5
