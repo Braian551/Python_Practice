@@ -76,16 +76,16 @@ def menu():
         print("3 es eliminar usuarios")
         print("4 es listar usuarios")
         print("5 es salir")
-        opcion= int(input("Ingresa un número"))
+        opcion= int(input("Ingresa un número: "))
         match opcion:
             case 1:
-                nombre = input("ingrese su nombre")
+                nombre = input("ingrese su nombre: ")
                 email = input("ingrese su email")
                 insertar_usuario(nombre,email)
             case 2:
                 id = int(input("Ingrese el id: "))
-                nombre = input("ingrese su nombre")
-                email = input("ingrese su email")
+                nombre = input("ingrese su nombre: ")
+                email = input("ingrese su email: ")
                 actualizar_usuario(id,nombre, email)
             case 3:
                 id = int(input("Inserta el id: "))
