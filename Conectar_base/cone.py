@@ -41,7 +41,7 @@ def insertar_usuario(nombre, email):  # Agregar parámetros
     print("Usuario insertado correctamente")
 
 # insertar_usuario("Braian", "braianoquen@gmail.com")
-listar_usuarios()
+# listar_usuarios()
 
 def actualizar_usuario(id,nombre,email):
     db=conectar()
@@ -62,9 +62,40 @@ def eliminar_usuario(id):
     db.close
     
     
-eliminar_usuario(9)
+# eliminar_usuario(9)
     
     
 # actualizar_usuario(9, "Braian2", "braianoquen@gmail.com")
-listar_usuarios()
+# listar_usuarios()
 
+def menu():
+    while True:
+        print("Bienvenido al sistema de base de datos elija su opcion")
+        print("1 Insertar usuarios")
+        print("2 es actualizar usuarios")
+        print("3 es eliminar usuarios")
+        print("4 es listar usuarios")
+        print("5 es salir")
+        opcion= int(input("Ingresa un número"))
+        match opcion:
+            case 1:
+                nombre = input("ingrese su nombre")
+                email = input("ingrese su email")
+                insertar_usuario(nombre,email)
+            case 2:
+                id = int(input("Ingrese el id: "))
+                nombre = input("ingrese su nombre")
+                email = input("ingrese su email")
+                actualizar_usuario(id,nombre, email)
+            case 3:
+                id = int(input("Inserta el id: "))
+                eliminar_usuario(id)
+            case 4:
+                listar_usuarios()
+            case 5:
+                print("Has salido del sistema")
+                break;
+            case __:
+                print("no coloco opcion correcta")
+menu()
+        
